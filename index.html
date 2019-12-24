@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Cat Game</title>
+  <link rel='stylesheet' href='css/index.css'>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <canvas id="gameField">Обновите браузер</canvas>
+    
+    <img id="cat" src="img/cat.png" alt="" style="display: none;">
+    
+
+    <div class="control-panel">
+      <div class="arrows-wrapper">
+        <button id="btn-left" class="arrow-active"><img src="img/left.svg" alt=""></button>
+        <button id="btn-up"><img src="img/top.svg" alt=""></button>
+        <button id="btn-right"><img src="img/right.svg" alt=""></button>
+        <button id="btn-down"><img src="img/down.svg" alt=""></button>
+      </div>
+      <button id="btn-record"><img src="img/record.svg" alt=""> record</button>
+      <button id="btn-stop"><img src="img/stop.svg" alt=""> stop</button>
+    </div>
+
+</div>
+<div class="instruction-wrapper">
+  <button id="btn-instruction">інструкція</button>
+  <div class="instruction">
+    Ви можете використовувати англ. клавіатуру:
+    <br>
+    ← ↑ ↓ → - стрілки
+    <br>
+    r - record
+    <br>
+    s - stop
+    <br>
+    i - інструкція
+  </div>
+</div>
+
+  <audio id="audio-click" src="libs/button.mp3"></audio>
+  <audio id="meow" src="libs/meow2.mp3"></audio>
+  <audio id="khhh" src="libs/angry.mp3"></audio>
+
+  <script src='js/index.js'></script>
+</body>
+</html>
